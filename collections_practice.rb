@@ -60,5 +60,8 @@ def find_a(arr)
 end
 
 def sum_array(arr)
-  
+  sum = 0
+  arr.each.inject(sum) do |s, (e)|
+    s += e.to_i
+  end
 end
