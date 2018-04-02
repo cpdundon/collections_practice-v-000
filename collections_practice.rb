@@ -33,7 +33,10 @@ def swap_elements(arr, left = 2, right = 3)
 end
 
 def reverse_array(arr)
-  arr.each_with_index.inject(out_container) do |e, i| ||
-    
+  m_idx = arr.length - 1
+  out_container = [0..m_idx].to_a
+  arr.each_with_index.inject(out_container) do |out, (e, i)|
+    out_container[m_idx - i] = e
   end
+  out_container
 end
