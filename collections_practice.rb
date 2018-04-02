@@ -53,10 +53,8 @@ def kesha_maker(arr)
 end
 
 def find_a(arr)
-  rtn = arr.collect do |e|
-    if e.start_with?("a")
-      e
-    end
+  rtn = arr.findall do |e|
+    e.start_with?("a")
   end
   rtn
 end
