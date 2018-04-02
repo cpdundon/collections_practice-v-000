@@ -65,3 +65,7 @@ def sum_array(arr)
     s += e.to_i
   end
 end
+
+def add_s(arr)
+  
+end
