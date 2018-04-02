@@ -54,7 +54,7 @@ end
 
 def find_a(arr)
   rtn = arr.collect do |e|
-    if e.starts_with?("a")
+    if e.start_with?("a")
       e
     end
   end
