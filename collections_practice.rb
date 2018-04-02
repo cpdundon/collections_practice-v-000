@@ -68,6 +68,6 @@ end
 
 def add_s(arr)
   rtn = arr.each_with_index.collect do |e, i|
-    i = 1 ? e : (e + "s") 
+    i == 1 ? e : (e + "s") 
   end
 end
