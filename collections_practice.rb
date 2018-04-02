@@ -44,6 +44,10 @@ end
 def kesha_maker(arr)
   out = []
   arr.each do |e|
+    temp = ""
     
+    temp = temp + e.slice(0,2) + "$" + e.slice(4,)
+    out << temp
   end
+  out
 end
